@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Color Juice</title>
+
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="lib/fonts/css/font-awesome.css" rel="stylesheet">
+
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+  </head>
+
+  <body id="cad-login">
+
+    <div class="status">
+      Estamos Aberto
+    </div>
+
+    <div class="logo">
+      <div class="container">
+        <img src="img/Logo.png" width="300px">        
+      </div>
+    </div>
+
+    <div class="page-pedido">
+      <div class="container">
+      <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8 bg-cli">
+          <div class="row">
+            <div class="col-md-12">
+              <h3 class="pedido-painel">Pedido</h3>
+              <hr>
+              <form>
+                <table>
+                  <tr>
+                    <td>
+                      <div class="form-group">
+                        <label>Escolha seu Suco:</label>
+                        <select name="Itens">
+                          <option value="0">Nenhum</option>
+                          <option value="1-">1-SUCO DETOX</option>
+                          <option value="2">2-SUCO PRÉ TREINO</option>
+                          <option value="3">3-SUCO IMUNIDADE</option>
+                          <option value="4">4-SUCO DIURÉTICO</option>
+                          <option value="5">5-SUCO BRONZE</option>
+                          <option value="6">6-SUCO RELEX</option>
+                        </select>
+                      </div>
+                    </td>
+                    <td><label class="valor">Valor: R$15,00</label></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="form-group">
+                        <label>Opcionais:</label>
+                        <select name="Itens">
+                          <option value="0">Nenhum</option>
+                          <option value="1">CANELA</option>
+                          <option value="2">LINHAÇA</option>
+                          <option value="3">GENGIBRE</option>
+                          <option value="4">ESPIRULINA</option>
+                        </select>
+                      </div>
+                    </td>
+                    <td><label class="valor">Valor: R$3,00    <a href="">+ opcional</a></label></td>                    
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="form-group">
+                        <label>Incluir Futas:</label>
+                        <select name="Itens">
+                          <option value="0">Nenhum</option>
+                          <option value="1">Morango</option>
+                          <option value="2">Abacaxi</option>
+                          <option value="3">Limão</option>
+                          <option value="4">Maracujá</option>
+                        </select>
+                      </div>
+                    </td>
+                    <td><label class="valor">Valor: R$5,00</label></td>                    
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="form-group">
+                        <label>Observação:</label>
+                        <textarea placeholder="Mensagem" required data-validation-required-message="Entre com a mensagem."></textarea>
+                      </div>
+                    </td>                    
+                  </tr>
+                </table>             
+            </div>
+          </div>
+          <h3 class="pedido-painel pagamento">Pagamento</h3>
+          <hr>
+          <div class="row text-center">
+            <div class="col-md-6">
+              <a href="">
+                <div class="pagamento-gly text-center float-right">
+                  Dinheiro&nbsp;<i class="fa fa-money" aria-hidden="true"></i>             
+                </div>
+              </a>
+            </div>
+            <div class="col-md-6">
+              <a href="">
+                <div class="pagamento-gly text-center float-left">
+                  Cartão&nbsp;<i class="fa fa-credit-card" aria-hidden="true"></i>
+                </div>
+              </a>
+            </div>
+          </div>
+          <hr>
+          <div class="row">
+            <div class="cli">
+              <div class="status-cli">Total: R$15,00</div>
+              <div class="status-cli bom">Descontos: R$0,00</div>
+              <div class="status-cli danger">Entrega: R$3,00</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="cli">
+              <button onclick="alerta" class="status-cli" type="submit">Concluir Pedido</button>
+            </div>
+            </form>
+          </div>          
+        </div>
+        <div class="col-md-2"></div>
+      </div>
+      </div>
+    </div>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <p class="footer">Copyright © 2022 Color Juices - Todos os direitos reservados.</p>
+          </div>
+        </div>
+      </div>
+    </footer>    
+    <!-- Bootstrap core JavaScript -->
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/popper/popper.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="lib/jquery-easing/jquery.easing.min.js"></script>
+
+    <script src="js/delivery.js"></script>
+
+  </body>
+
+</html>
